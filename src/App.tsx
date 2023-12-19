@@ -1,7 +1,17 @@
-import './index.css'
+import Family from './Components/Family'
+
 function App() {
+  const familySecret={
+    familyName:"xyz",
+    onlyParentCanSee:()=>{
+      return `The xyz are the best!`;
+    },
+    onlyGrandChildrenShouldKnow: () => {
+      return `They are the best!`;
+    }
+  }
   return (
-   <h1>Hello world</h1>
+   <Family secret={familySecret}/>
   )
 }
 
