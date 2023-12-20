@@ -1,17 +1,12 @@
 import Family from './Components/Family'
+import FamilyContextProvider from './context/FamilyContextProvider'
 
 function App() {
-  const familySecret={
-    familyName:"xyz",
-    onlyParentCanSee:()=>{
-      return `The xyz are the best!`;
-    },
-    onlyGrandChildrenShouldKnow: () => {
-      return `They are the best!`;
-    }
-  }
+
   return (
-   <Family secret={familySecret}/>
+    <FamilyContextProvider>
+      <Family />
+    </FamilyContextProvider>
   )
 }
 

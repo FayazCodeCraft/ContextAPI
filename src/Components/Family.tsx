@@ -1,11 +1,11 @@
 
-import { FamilyProps } from '../types/family';
+// import { FamilyProps } from '../types/family';
 import Parent from './Parent';
 
-const Family = ({secret}:FamilyProps) => {
+const Family = () => {
   return (
     <div className="flex justify-center">
-      <Parent secret={secret}/>
+      <Parent />
     </div>
   );
 }
