@@ -1,4 +1,4 @@
-interface FamilySecret {
+export interface FamilySecret {
     familyName: string;
     onlyParentCanSee: () => string;
     onlyGrandChildrenShouldKnow: () => string;
@@ -6,5 +6,5 @@ interface FamilySecret {
   
 export interface FamilyProps {
     secret: FamilySecret;
-  }
+}
   
